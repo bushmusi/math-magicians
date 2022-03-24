@@ -1,27 +1,45 @@
-import logo from './logo.svg';
+// import Calculator from './component/Calculator';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          <code>
-            src/App.js
-          </code>
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="ResultBox InputBox">
+        <h3>0</h3>
+      </div>
+
+      <div className="AC InputBox">
+        <button type="button">AC</button>
+      </div>
+
+      <div className="InputBox">
+        <button type="button">+/-</button>
+      </div>
+
+      <div className="InputBox">
+        <button type="button">%</button>
+      </div>
+
+      <div className="InputBox LeftBtn">
+        <button type="button">/</button>
+      </div>
+
+      <div className="InputBox">
+        <button type="button">7</button>
+      </div>
+
+      <div className="InputBox">
+        <button type="button">8</button>
+      </div>
+
+      <div className="InputBox">
+        <button type="button">9</button>
+      </div>
+
+      <div className="InputBox LeftBtn">
+        <button type="button">*</button>
+      </div>
     </div>
   );
 }
