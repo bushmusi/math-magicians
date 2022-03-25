@@ -1,0 +1,26 @@
+body{
+    #root {
+        div.App {
+            .InputBox {
+                background-color: aliceblue;
+                display: flex;
+                justify-content: center;
+              }
+              
+              .ResultBox {
+                background-color: rgb(77 72 72 / 60%);
+                grid-area: result;
+                display: grid;
+                padding: 10px;
+                align-items: center;
+                justify-content: flex-end;
+              }
+            
+              .LeftBtn {
+                background-color: rgb(241, 137, 18);
+              }
+        }
+    }
+}
+
+  
