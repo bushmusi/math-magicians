@@ -18,7 +18,7 @@ const inputList = {
   },
 
   divide: {
-    symbol: '/',
+    symbol: '÷',
     isLeft: true,
     isOperation: true,
   },
@@ -41,7 +41,7 @@ const inputList = {
   },
 
   multiply: {
-    symbol: '*',
+    symbol: 'x',
     isLeft: true,
     isOperation: true,
   },
