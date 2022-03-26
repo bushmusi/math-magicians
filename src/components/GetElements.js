@@ -3,6 +3,16 @@ import inputList from './Child-Data';
 import CellComponent from './CellComponent';
 
 class GetElements extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleOperation = this.handleOperation.bind(this);
+  }
+
+  handleOperation(e) {
+    /* eslint-disable */
+    this.props.handleOperation(e);
+  }
+
   render() {
     const items = [];
     Object.entries(inputList).forEach((key) => {
@@ -14,7 +24,7 @@ class GetElements extends React.Component {
         isCellLeftSide: key[1].isLeft ? 'LeftBtn' : '',
       };
 
-      items.push(<CellComponent itemInfo={cellInfo} key={`Cell${key[0]}`} />);
+      items.push(<CellComponent itemInfo={cellInfo} key={`Cell${key[0]}`} operate={this.handleOperation} />);
     });
     return items;
   }
