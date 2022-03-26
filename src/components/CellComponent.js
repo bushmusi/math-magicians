@@ -7,6 +7,11 @@ class CellComponent extends React.Component {
     this.state = {};
   }
 
+  handleOperation(btnVal) {
+    /* eslint-disable */
+    this.props.operate(btnVal);
+  }
+
   render() {
     const { itemInfo } = this.props;
     const {
@@ -15,7 +20,7 @@ class CellComponent extends React.Component {
     let { isCellLeftSide } = itemInfo;
     isCellLeftSide = cellSymbol === '0' ? 'ZeroBtn' : isCellLeftSide;
     return (
-      <div className={`InputBox ${cellClassName} ${isCellLeftSide}`} id={`Cell${cellID}`} key={cellID}>
+      <div className={`InputBox ${cellClassName} ${isCellLeftSide}`} id={`Cell${cellID}`} key={cellID} onClick={() => this.handleOperation(cellSymbol)} aria-hidden="true">
         <button type="button" id={`btn-${cellID}`}>
           {cellSymbol}
         </button>
@@ -25,6 +30,7 @@ class CellComponent extends React.Component {
 }
 
 CellComponent.propTypes = {
+  operate: PropTypes.func.isRequired,
   itemInfo: PropTypes.shape({
     cellClassName: PropTypes.string.isRequired,
     cellID: PropTypes.string.isRequired,
