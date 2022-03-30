@@ -29,8 +29,24 @@ body {
 
 @media only screen and (min-width: 480px) {
   #root {
-    div.app {
-      width: 25vw;
+    div.App {
+      width: 84vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #root {
+    div.App {
+      width: 84vw;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #root {
+    div.App {
+      width: 64vw;
     }
   }
 }
@@ -38,7 +54,7 @@ body {
 @media only screen and (min-width: 992px) {
   #root {
     div.App {
-      width: 35vw;
+      width: 38vw;
     }
   }
 }
