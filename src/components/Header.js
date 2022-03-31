@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const links = [
@@ -22,11 +22,20 @@ const Header = () => {
 
   return (
     <nav className="navContainer">
-      <ul className="linList">
+      <div>
+        <NavLink to="/" style={{ fontWeight: 'bolder' }}>Math Magicians</NavLink>
+      </div>
+      <ul className="linkList">
         {
                     links.map((item) => (
                       <li key={item.id}>
-                        <Link to={item.path}>{item.title}</Link>
+                        <NavLink
+                          to={item.path}
+                          activeClassName="active-link"
+                          exact
+                        >
+                          {item.title}
+                        </NavLink>
                       </li>
                     ))
                 }
