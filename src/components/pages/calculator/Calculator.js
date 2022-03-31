@@ -1,8 +1,6 @@
-import './Calculator.scss';
-
 import React, { useState } from 'react';
 import GetElements from './GetElements';
-import calculate from '../logic/calculate';
+import calculate from '../../../logic/calculate';
 
 const Calculator = () => {
   const initialItems = {

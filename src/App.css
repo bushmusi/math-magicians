@@ -1,11 +1,4 @@
-.App {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  height: 70vh;
-  width: 50vw;
-  align-content: center;
-  background-color: rgb(239 239 239);
-  grid-template-areas: 'result result result result';
-  gap: 4px;
+.active-link {
+  color: #f18912;
+  font-weight: bolder;
 }

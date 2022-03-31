@@ -1,5 +1,5 @@
 import React from 'react';
-import inputList from './Child-Data';
+import inputList from '../../../Child-Data';
 import CellComponent from './CellComponent';
 
 class GetElements extends React.Component {
