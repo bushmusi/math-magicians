@@ -7,12 +7,14 @@ import './App.scss';
 function App() {
   return (
     <>
-      <Route exact path='/'>
-        <Header />
-        <div className="App" id="GridContainer">
-          <Calculator />
-        </div>
-      </Route>
+      <Switch>
+        <Route path="/">
+          <Header />
+          <div className="App" id="GridContainer">
+            <Calculator />
+          </div>
+        </Route>
+      </Switch>
     </>
 
   );
