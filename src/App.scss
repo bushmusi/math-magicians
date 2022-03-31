@@ -1,61 +1,117 @@
 body {
-    #root {
-      div.App {
-        .InputBox {
-          background-color: aliceblue;
-          display: flex;
-          justify-content: center;
-        }
-  
-        .ResultBox {
-          background-color: rgb(77 72 72 / 60%);
-          grid-area: result;
-          display: grid;
-          padding: 10px;
-          align-items: center;
-          justify-content: flex-end;
-        }
-  
-        .LeftBtn {
-          background-color: rgb(241, 137, 18);
-        }
-  
-        .ZeroBtn {
-          grid-area: 6 / 1 / span 1 / span 2;
-        }
+  #root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 50px;
+
+    nav {
+      display: flex;
+      justify-content: flex-start;
+      padding: 20px;
+      background-color: rgba(77, 72, 72, 0.6);
+
+      div {
+        flex: 1;
+      }
+
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+    }
+
+    .CalcContainer {
+      display: flex;
+      column-gap: 20px;
+
+      .caclTitle {
+        flex: 2;
+      }
+    }
+
+    div.App {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      height: 70vh;
+      width: 100%;
+      align-content: center;
+      background-color: rgb(239 239 239);
+      grid-template-areas: 'result result result result';
+      gap: 4px;
+
+      .InputBox {
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+      }
+
+      .ResultBox {
+        background-color: rgb(77 72 72 / 60%);
+        grid-area: result;
+        display: grid;
+        padding: 10px;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+      .LeftBtn {
+        background-color: rgb(241, 137, 18);
+      }
+
+      .ZeroBtn {
+        grid-area: 6 / 1 / span 1 / span 2;
       }
     }
   }
-  
-  @media only screen and (min-width: 480px) {
-    #root {
-      div.App {
-        width: 84vw;
+}
+
+@media only screen and (min-width: 480px) {
+  #root {
+    .CalcContainer > .App {
+      width: 84vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #root {
+    .CalcContainer {
+      flex-direction: column;
+      row-gap: 20px;
+      padding: 20px;
+
+      .caclTitle {
+        flex: 1;
       }
     }
   }
-  
-  @media only screen and (max-width: 480px) {
-    #root {
-      div.App {
-        width: 84vw;
+}
+
+@media only screen and (min-width: 992px) {
+  #root {
+    .CalcContainer {
+      flex-direction: row;
+      column-gap: 20px;
+      padding: 20px;
+
+      .caclTitle {
+        flex: 2;
+      }
+
+      .App {
+        width: 50%;
       }
     }
   }
-  
-  @media only screen and (min-width: 600px) {
-    #root {
-      div.App {
-        width: 64vw;
-      }
+}
+
+@media only screen and (min-width: 1400px) {
+  #root {
+    .CalcContainer > .App {
+      width: 50%;
     }
   }
-  
-  @media only screen and (min-width: 992px) {
-    #root {
-      div.App {
-        width: 38vw;
-      }
-    }
-  }
-  
+}
