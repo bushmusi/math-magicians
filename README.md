@@ -6,9 +6,9 @@ This project is build using React framework and I have used `stylelint` and `esl
 - **CSS3** `grid` features have used for input displays
 
 ## Live Demo 
-> [GitHub Cloud Link](https://bushmusi.github.io/math-magicians/)
-> [Heroku Cloud Link](https://math-hub.herokuapp.com/)
-> [Netlify Cloud Link](https://math-hub.netlify.app/)
+- > [GitHub Cloud Link](https://bushmusi.github.io/math-magicians/)
+- > [Heroku Cloud Link](https://math-hub.herokuapp.com/)
+- > [Netlify Cloud Link](https://math-hub.netlify.app/)
 ![screenshot](./app_screenshot.png)
 ## Built With
 
