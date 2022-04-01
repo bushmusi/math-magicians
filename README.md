@@ -7,7 +7,7 @@ This project is build using React framework and I have used `stylelint` and `esl
 
 ## Live Demo
 > [Watch Live](https://bushmusi.github.io/math-magicians/)
-
+![screenshot](./app_screenshot.png)
 ## Built With
 
 - React.Js
