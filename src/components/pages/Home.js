@@ -28,7 +28,7 @@ const Home = () => {
         </ol>
       </p>
       <p>
-        I have used Four functional components to make this page
+        I have used Three functional components to make this page
         <ol style={oldStyle}>
           <li>Home page</li>
           <li>Calculator</li>
